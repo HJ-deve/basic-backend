@@ -8,3 +8,7 @@ app.listen(8080, function () {
 app.get("/practice", function (req, res) {
   res.send("practicing how to make server");
 });
+
+app.get("/", function (req, res) {
+  res.sendFile(__dirname + "/index.html");
+});
